@@ -53,10 +53,12 @@ body {
   left: 0;
   bottom: -4px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+
+
+ 
+  
 }
-.part2 > a:hover::after {
-  width: 100%;
-}
+
 .part2 > a {
   font-size: 1.1vw;
   font-weight: 500;
@@ -64,6 +66,13 @@ body {
   text-decoration: none;
   font-family: gilroy;
   text-transform: capitalize;
+  transition: all .5s;
+
+  &:hover{
+    &::after{
+      width: 100%;
+    }
+  }
 }
 
 .page1 h1 {
@@ -470,16 +479,12 @@ button:hover span {
   align-items: center;
   justify-content: center;
   
-  &:hover{
-    button{
-      border-radius: 0;
-    }
-  }
+ 
   
 }
 button{
   all: unset;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
   border-radius: 50px;
   color: #fff;
   background-color: #004d43;
